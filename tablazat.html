@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Zenei Stílusok</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Unbounded:wght@500;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrap">
+
+    <nav class="topbar" aria-label="Főmenü">
+      <ul class="menu">
+        <li><a href="#tablazat">Hangulatok</a></li>
+        <li><a href="#tablazat">Stílusok</a></li>
+        <li><a href="#tablazat">Táblázat</a></li>
+      </ul>
+      <a class="brand" href="#" aria-label="Kezdőlap">
+        <span class="brand-name">Hangoló</span>
+        <span class="logo-btn"><span class="logo-img" aria-hidden="true"></span></span>
+      </a>
+    </nav>
+
+    <header class="hero">
+      <span class="hero-badge"><span aria-hidden="true">🎧</span> Hangoló</span>
+      <h1>Zenei hangulatok.</h1>
+      <p>Válaszd ki a hangulatod, kattints rá a szalagon, és megkapod hozzá a stílust és a hallgatási helyzeteket.</p>
+      <ul class="hero-stats">
+        <li>🙂 6 hangulat</li>
+        <li>🎼 12 stílus</li>
+        <li>📍 13 helyzet</li>
+      </ul>
+      <a href="#" class="hero-cta" id="shuffle-btn"><span aria-hidden="true">🔀</span> Válassz nekem hangulatot</a>
+    </header>
+
+    <nav class="ticker" aria-label="Ugrás egy hangulathoz">
+      <div class="ticker-track">
+        <a href="#row-nyugodt">🌊 Nyugodt</a><a href="#row-energikus">🔥 Energikus</a><a href="#row-nosztalgikus">📼 Nosztalgikus</a>
+        <a href="#row-melankolikus">🌧️ Melankolikus</a><a href="#row-vidam">🕺 Vidám</a><a href="#row-fokuszalt">🎯 Fókuszált</a>
+        <a href="#row-nyugodt" aria-hidden="true" tabindex="-1">🌊 Nyugodt</a><a href="#row-energikus" aria-hidden="true" tabindex="-1">🔥 Energikus</a><a href="#row-nosztalgikus" aria-hidden="true" tabindex="-1">📼 Nosztalgikus</a>
+        <a href="#row-melankolikus" aria-hidden="true" tabindex="-1">🌧️ Melankolikus</a><a href="#row-vidam" aria-hidden="true" tabindex="-1">🕺 Vidám</a><a href="#row-fokuszalt" aria-hidden="true" tabindex="-1">🎯 Fókuszált</a>
+      </div>
+    </nav>
+
+    <main>
+      <!-- TÁBLÁZAT -->
+      <section id="tablazat" aria-labelledby="h-tablazat">
+        <h2 id="h-tablazat">Táblázat</h2>
+        <table>
+          <caption>Zenei ajánlások hangulat, stílus és hallgatási helyzet szerint</caption>
+          <thead>
+            <tr>
+              <th scope="col">Hangulat</th>
+              <th scope="col">Stílus</th>
+              <th scope="col">Hallgatási helyzet</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr id="row-nyugodt">
+              <th scope="row"><div class="mood"><span class="sticker" aria-hidden="true">🌊</span>Nyugodt</div></th>
+              <td data-label="Stílus"><ul class="tags"><li>ambient</li><li>lo-fi</li></ul></td>
+              <td data-label="Hallgatási helyzet"><ul class="tags"><li>📚 olvasás</li><li>✏️ tanulás</li><li>🛋️ esti chill</li></ul></td>
+            </tr>
+            <tr id="row-energikus">
+              <th scope="row"><div class="mood"><span class="sticker" aria-hidden="true">🔥</span>Energikus</div></th>
+              <td data-label="Stílus"><ul class="tags"><li>house</li><li>elektro</li></ul></td>
+              <td data-label="Hallgatási helyzet"><ul class="tags"><li>🏋️ edzés</li><li>🏃 futás</li></ul></td>
+            </tr>
+            <tr id="row-nosztalgikus">
+              <th scope="row"><div class="mood"><span class="sticker" aria-hidden="true">📼</span>Nosztalgikus</div></th>
+              <td data-label="Stílus"><ul class="tags"><li>retró pop</li><li>80-as évek</li></ul></td>
+              <td data-label="Hallgatási helyzet"><ul class="tags"><li>🚗 autózás</li><li>🍕 baráti esték</li></ul></td>
+            </tr>
+            <tr id="row-melankolikus">
+              <th scope="row"><div class="mood"><span class="sticker" aria-hidden="true">🌧️</span>Melankolikus</div></th>
+              <td data-label="Stílus"><ul class="tags"><li>indie folk</li><li>akusztikus</li></ul></td>
+              <td data-label="Hallgatási helyzet"><ul class="tags"><li>🚶 esti séta</li><li>☔ esős délután</li></ul></td>
+            </tr>
+            <tr id="row-vidam">
+              <th scope="row"><div class="mood"><span class="sticker" aria-hidden="true">🕺</span>Vidám</div></th>
+              <td data-label="Stílus"><ul class="tags"><li>funk</li><li>soul</li></ul></td>
+              <td data-label="Hallgatási helyzet"><ul class="tags"><li>🍳 főzés</li><li>🧹 takarítás</li></ul></td>
+            </tr>
+            <tr id="row-fokuszalt">
+              <th scope="row"><div class="mood"><span class="sticker" aria-hidden="true">🎯</span>Fókuszált</div></th>
+              <td data-label="Stílus"><ul class="tags"><li>minimal klasszikus</li><li>instrumentális</li></ul></td>
+              <td data-label="Hallgatási helyzet"><ul class="tags"><li>💻 munka</li><li>⌨️ programozás</li></ul></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+
+    <footer>© 2026 Zene. Minden jog fenntartva.</footer>
+
+  </div>
+  <script>
+    (function () {
+      var btn = document.getElementById('shuffle-btn');
+      var ids = ['row-nyugodt', 'row-energikus', 'row-nosztalgikus', 'row-melankolikus', 'row-vidam', 'row-fokuszalt'];
+      btn.addEventListener('click', function (e) {
+        e.preventDefault();
+        var current = location.hash.slice(1);
+        var choices = ids.filter(function (id) { return id !== current; });
+        var pick = choices[Math.floor(Math.random() * choices.length)];
+        if (location.hash === '#' + pick) {
+          document.getElementById(pick).scrollIntoView({ behavior: 'smooth', block: 'start' });
+        } else {
+          location.hash = pick;
+        }
+      });
+    })();
+  </script>
+</body>
+</html>
